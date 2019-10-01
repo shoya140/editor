@@ -2,6 +2,8 @@
 <html lang='en'>
 <head>
   <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Editor</title>
   <style>
     html {
@@ -18,6 +20,7 @@
     textarea {
       resize: none;
       border: none;
+      outline: none;
       display: block;
       margin: 0 auto;
       padding: 20px;
@@ -28,9 +31,6 @@
       font-size: 14px;
       line-height: 1.5;
       background-color: #ffffff;
-    }
-    textarea {
-      outline: none;
     }
     @media (prefers-color-scheme: dark) {
       body {
@@ -47,7 +47,7 @@
   <textarea></textarea>
 </body>
 <script>
-  window.onload = async function () {
+  window.onload = function () {
     document.querySelector('textarea').focus()
   }
 </script>
